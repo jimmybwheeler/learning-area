@@ -41,7 +41,13 @@
     ]
 
     // Add your code here
-
+    for(let i = 0; i <= phonebook.length; i++){
+      if (phonebook.name[i] === name[i] && phonebook.number[i] === number[i]){
+        para.textContent = name + number;
+        break;
+      }
+    }
+      
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
